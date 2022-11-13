@@ -1,0 +1,14 @@
+.card {
+    width: 18rem;
+}
+
+.product-image {
+    width: 16rem;
+    height: 16rem;
+    object-fit: contain;
+}
+
+.product-buttons {
+    position: relative;
+    bottom: 0;
+}

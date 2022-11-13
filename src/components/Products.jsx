@@ -1,10 +1,26 @@
-import { allProducts } from '../functions/functions'
+import { useState, useEffect } from 'react';
+import { allProducts as fetchData } from '../functions/functions';
+import ProductCard from './ProductCard';
+import "../styles/Products.css";
+
 
 const Products = () => {
-  allProducts()
-  return (
-    <div>
+  const [allProducts, setAllProducts] = useState(null);
 
+  useEffect(() => {
+    fetchData(setAllProducts)
+  }, []);
+
+  let keyValue = 0;
+
+  return (
+    <div className='product-container'>
+    {allProducts != null ? (allProducts.map(product=>{
+      keyValue++;
+      return (
+        <ProductCard title={product.title} id={product.id} price={product.price} image={product.image} key={keyValue} />
+      )
+    })) : ('Cargando los productos') }
     </div>
   )
 }

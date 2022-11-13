@@ -4,14 +4,14 @@ import "../styles/Navbar.css"
 const Navbar = () => {
 
   return (
-    <nav className="navbar navbar-expand-lg bg-primary ">
+    <nav className="navbar navbar-expand-lg bg-primary">
       <div className="container-fluid">
         <a className="navbar-brand text-light" href="/">
           Ecommerce
         </a>
 
         <button
-          className="navbar-toggler "
+          className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"

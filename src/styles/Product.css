@@ -1,0 +1,22 @@
+.product-subtitle {
+    display: block ;
+    text-align: center;
+    border-bottom: 2px solid #555;
+    
+}
+
+.product-image_inProduct {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+}
+
+.product-description {
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.container_inProduct {
+    margin: 1rem auto;
+}
