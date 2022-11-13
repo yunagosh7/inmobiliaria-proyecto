@@ -1,0 +1,14 @@
+.cart-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.circle {
+    height: 20px;
+    width: 20px;
+    font-size: 0.8rem;
+    position: absolute;
+    right: 0;
+    bottom: -2px;
+    background-color: #f55 !important;
+}

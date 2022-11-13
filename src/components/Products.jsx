@@ -1,8 +1,11 @@
-import React from 'react'
+import { allProducts } from '../functions/functions'
 
 const Products = () => {
+  allProducts()
   return (
-    <div>Products</div>
+    <div>
+
+    </div>
   )
 }
 
