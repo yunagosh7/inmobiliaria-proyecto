@@ -1,9 +1,12 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import { useParams } from "react-router-dom";
+import { CartContext } from "../context/cart/CartContext";
 import { oneProduct as fetchOneProduct } from "../functions/functions";
 import "../styles/Product.css";
 
 const Product = () => {
+
+
   const params = useParams();
 
   const [product, setProduct] = useState(null);
@@ -13,7 +16,7 @@ const Product = () => {
   }, []);
 
   return (
-    <>
+    <div className="container">
       {product != null ? (
         <div className="container p-4 w-75">
           <h2>{product.title} </h2>
@@ -27,14 +30,14 @@ const Product = () => {
               <h4 className="product-subtitle pb-4">Description</h4>
               <p className="product-description pt-4">{product.description} </p>
 
-              <button className="btn btn-success mx-auto mt-5">Add to cart</button>
+              <button className="btn btn-success mx-auto mt-5" >Add to cart</button>
             </div>
           </div>
         </div>
       ) : (
-        "Cargando el producto"
+        "Loading the product"
       )}
-    </>
+    </div>
   );
 };
 

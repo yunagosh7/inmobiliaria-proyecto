@@ -11,16 +11,14 @@ const Products = () => {
     fetchData(setAllProducts)
   }, []);
 
-  let keyValue = 0;
 
   return (
     <div className='product-container'>
     {allProducts != null ? (allProducts.map(product=>{
-      keyValue++;
       return (
-        <ProductCard title={product.title} id={product.id} price={product.price} image={product.image} key={keyValue} />
+        <ProductCard title={product.title} id={product.id} price={product.price} image={product.image} key={product.id} product={product} />
       )
-    })) : ('Cargando los productos') }
+    })) : ('Loading products') }
     </div>
   )
 }
