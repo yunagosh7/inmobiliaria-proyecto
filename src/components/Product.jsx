@@ -16,11 +16,11 @@ const Product = () => {
   }, []);
 
   return (
-    <div className="container">
+    <div className="container ">
       {product != null ? (
-        <div className="container p-4 w-75">
-          <h2>{product.title} </h2>
-          <div className="d-flex">
+        <div className="container info-product p-4 w-75">
+          <h2 className="product-title-inProduct">{product.title} </h2>
+          <div className="d-flex flex-column product-image-description">
             <img
               alt={product.title}
               src={product.image}

@@ -7,9 +7,7 @@
 .container {
     position: relative;
     top: 20px;
-
 }
-
 
 .product-image_inProduct {
     width: 300px;
@@ -25,4 +23,28 @@
 
 .container_inProduct {
     margin: 1rem auto;
+}
+
+@media screen and (max-width:960px){
+    .info-product {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .product-image-description {
+        width: 100%;
+        margin: 0;
+    }
+
+    .product-image_inProduct{
+        width: 90%;
+        height: 90%;
+    }
+
+    .product-title-inProduct {
+        font-size: 1.5rem;        
+    }
+    .product-description {
+        width: 100%;
+    }
 }

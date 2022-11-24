@@ -4,10 +4,10 @@ import "../styles/Navbar.css";
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
-  const { cart } = useContext(CartContext)
+  const { cart } = useContext(CartContext);
 
   return (
-    <nav className="navbar navbar-expand-lg bg-primary   w-100">
+    <nav className="navbar navbar-expand-lg bg-primary">
       <div className="container-fluid">
         <NavLink className="navbar-brand text-light" to="/">
           Ecommerce

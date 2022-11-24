@@ -1,16 +1,14 @@
 import { useContext } from "react";
 import "../styles/ProductCardInCart.css";
 import { NavLink } from "react-router-dom";
-import { useParams } from "react-router-dom";
 import { CartContext } from "../context/cart/CartContext";
 
 const ProductCardInCart = (props) => {
-  const params = useParams();
 
   const { removeProduct } = useContext(CartContext);
 
   return (
-    <div className="card mx-auto my-2">
+    <div className="card my-2 product-card">
       <img
         src={props.product.image}
         className="card-img-top product-image"

@@ -1,0 +1,18 @@
+.product-container-cart {
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.price-container{
+    position: relative;
+    left: 10px;
+
+}
+
+.price-h1 {
+    text-align: start;
+    display: inline;
+    position: relative;
+    top: 4rem;
+}

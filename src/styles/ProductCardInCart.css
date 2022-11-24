@@ -1,0 +1,26 @@
+.product-container-cart {
+    width: 60vw;
+    margin: 0 auto;
+    justify-content: space-around;
+    position: relative;
+    flex-wrap: wrap;
+    height: 70vh;
+    overflow: auto;
+    top: 60px;
+    z-index: 0;
+}
+
+.product-image {
+    width: 16rem;
+    height: 16rem;
+    object-fit: contain;
+    padding: 1rem;
+}
+
+@media screen and (max-width:960px) {
+    .product-container-cart {
+        height: 100%;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
