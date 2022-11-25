@@ -10,6 +10,7 @@ export const CartContextProvider = ({ children }) => {
 
   const addProductToCart = (product) => {
     if (cart.indexOf(product) === -1) {
+      console.log(cart.indexOf(product));
       setCart([...cart, product]);
     }
   };

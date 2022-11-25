@@ -7,6 +7,7 @@ import Products from "./components/Products";
 import Product from "./components/Product";
 import { CartContextProvider } from "./context/cart/CartContext";
 import Cart from "./components/Cart";
+import Info from "./components/Info";
 
 function App() {
   return (
@@ -15,11 +16,11 @@ function App() {
         <BrowserRouter>
         <Navbar />
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<Products />} />
             <Route path="/about" element={<About />} />
-            <Route path="/products" element={<Products />} />
             <Route path="/product/:id" element={<Product />} />
             <Route path="/cart" element={<Cart/>} />
+            <Route path="/info" element={<Info/>} />
           </Routes>
         </BrowserRouter>
       </CartContextProvider>

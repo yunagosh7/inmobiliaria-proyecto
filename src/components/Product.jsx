@@ -11,9 +11,13 @@ const Product = () => {
 
   const [product, setProduct] = useState(null);
 
+  const { addProductToCart } = useContext(CartContext)
+
   useEffect(() => {
     fetchOneProduct(setProduct, params.id);
   }, []);
+
+
 
   return (
     <div className="container ">
@@ -30,7 +34,7 @@ const Product = () => {
               <h4 className="product-subtitle pb-4">Description</h4>
               <p className="product-description pt-4">{product.description} </p>
 
-              <button className="btn btn-success mx-auto mt-5" >Add to cart</button>
+              <button onClick={()=>{addProductToCart(product)}} className="btn btn-success mx-auto mt-5" >Add to cart</button>
             </div>
           </div>
         </div>
